@@ -14,7 +14,7 @@ The input image is first resized in terms of number of pixels to the closest mul
 
 The results show the true power of PCA, as only the top eigenvector with the highest absolute value of the corresponding eigenvalue out of the total 100 carries almost the entire structural information of the image though there is significant loss of clarity. As we include more and more **components** the clarity of the image increases. We get reasonably good quality image by taking **10** principal components and almost identical image to the original one by taking **20** principal components. The gains in the visually perceptual quality becomes unnoticeable as we keep adding more and more principal components above **20**. In the following example, you can take a look at the changes in image quality as we go on including more and more principal components. <br>
 
-<img src="Outputs_Comparison.jpg">
+<img src="/Results/Outputs_Comparison.jpg">
 
 ## Levels of Image compression in the Flask Application
 
@@ -28,6 +28,6 @@ I have made a Flask application which when given an input image can do **3** dif
 
 You can take a look at one of the example image being compressed by these **3** levels of compression.
 
-<img src="Levels_of_Compression.jpg">
+<img src="/Results/Levels_of_Compression.jpg">
 
 Image Credit -> <a href="https://instagram.com/prajakta_official?igshid=OGQ5ZDc2ODk2ZA==">Prajakta Mali Instagram</a>
