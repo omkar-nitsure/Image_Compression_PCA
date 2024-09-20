@@ -4,8 +4,6 @@ Employed PCA to extract out only the most important information from the image b
 
 ## Author - Omkar Nitsure <br>
 
-## Github -> <a href="https://github.com/omkarnitsureiitb">Profile Link</a> <br>
-
 ## Methodology
 
 The input image is first resized in terms of number of pixels to the closest multiple of **10** in both x and y direction. The entire image is then broken down into disjoint patches of (**10, 10**). These pathces are then flattened into a vector of length **100**. This was done independently for all the **3** channels. These vectors were then stored columnwise one after the other to make **3** matrices one for each channel. Then the **covariance matrix** for the matrices were computed after subtracting the **mean**. Then the **eigenvalues and eigenvectors** of the covariance matrix were computed. The eigenvectors were then sorted in the decreasing order of the absolute value of the corresponding eigenvalues. Now based on our choice of the extent of compression, a set of these top eigenvectors are selected for each channel and all vectors in each of the **3** matrices are resolved in the directions of these eigenvectors. The value of projections is stored in **3** new matrices one for each channel. Finally, the vectors corresponding to each of the image patch are reconstructed based on projections on only the selected eigenvectors. The vectors are then reshaped to make the patches and the patches are then placed in their appropriate positions to get the final channel-wise image. These channels are finally combined to get the **compressed image**.
