@@ -2,7 +2,7 @@
 
 Employed PCA to extract out only the most important information from the image by selcting only a few components from the full set of **100** components. This technique can be used for image compression and we can reduce the file-size to **85%** of its original size through **almost lossless** compression. It can also reduce file-size upto **65%** of its original size but through **lossy compression**.
 
-## Author - Omkar Nitsure <br>
+## Author - Shubham Apte, Omkar Nitsure <br>
 
 ## Methodology
 
